@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="600.0" style="-fx-background-color: #070007;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="/AlquilerVehiculos-v3/src/main/java/org/iesalandalus/programacion/alquilervehiculos/modelo/vista/utilidades/Controlador">
+   <children>
+      <GridPane hgap="20.0" vgap="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="207.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.0" minWidth="10.0" prefWidth="373.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lbMarca" prefHeight="17.0" prefWidth="46.0" style="-fx-background-color: #FFFFFF;" text="Marca" GridPane.halignment="RIGHT" />
+            <Label fx:id="lbModelo" style="-fx-background-color: #FFFFFF;" text="Modelo" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label fx:id="lbMatricula" style="-fx-background-color: #FFFFFF;" text="Matricula" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <TextField fx:id="tfMarca" prefHeight="25.0" prefWidth="349.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfModelo" maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfMatricula" maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button mnemonicParsing="false" onAction="#Aceptar" prefHeight="25.0" prefWidth="84.0" text="Aceptar" translateX="160.0" translateY="5.0" />
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#Cancelar" prefHeight="25.0" prefWidth="88.0" text="Cancelar" translateX="265.0" translateY="-20.0" />
+      <ImageView fitHeight="60.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../ImagenesBotones/decades-of-corvette-mustang-3-series-and-accord-evolution-served-as-delicious-gifs_1_0.gif" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

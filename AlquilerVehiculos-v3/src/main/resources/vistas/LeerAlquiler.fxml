@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lbCliente" text="Cliente" />
+            <Label fx:id="lbVehiculo" alignment="TOP_LEFT" text="Vehiculo" GridPane.rowIndex="1" />
+            <Label fx:id="lbFechaAlquiler" text="FechaAlquiler" GridPane.rowIndex="2" />
+            <TextField fx:id="TfCliente" GridPane.columnIndex="1" />
+            <TextField fx:id="TfVehiculo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="TfFechaAlquiler" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lbFechaDevolucion" text="FechaDevolucion" GridPane.rowIndex="3" />
+            <TextField fx:id="TfFechaDevolucion" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btAceptar" mnemonicParsing="false" onAction="#Aceptar" text="Aceptar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#Cancelar" text="Cancelar" translateX="60.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <ImageView fitHeight="232.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" translateX="170.0">
+         <image>
+            <Image url="@../../../../ImagenesBotones/servicio-alquiler-mov.gif" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>
